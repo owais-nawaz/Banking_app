@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "VaultGuard",
   description: "VaultGuard is a modern secure banking platform",
   icons: {
-    icon: '/icons/logo.svg'
+    icon: '/icons/logo1.png'
   }
 };
 
