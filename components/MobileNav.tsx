@@ -37,7 +37,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
               src="/icons/logo1.png"
               width={34}
               height={34}
-              alt="Horizon logo"
+              alt="VaultGuard logo"
             />
             <h1 className="text-26 font-ibm-plex-serif font-bold text-black-1">VaultGuard</h1>
           </Link>
