@@ -11,7 +11,7 @@ export default async function RootLayout({
 }>) {
   const loggedIn = await getLoggedInUser();
 
-  if(!loggedIn) redirect('/sign-in')
+  if (!loggedIn) redirect('/sign-in')
 
   return (
     <main className="flex h-screen w-full font-inter">
@@ -19,7 +19,7 @@ export default async function RootLayout({
 
       <div className="flex size-full flex-col">
         <div className="root-layout">
-          <Image src="/icons/logo.svg" width={30} height={30} alt="logo" />
+          <Image src="/icons/logo1.png" width={40} height={40} alt="logo" />
           <div>
             <MobileNav user={loggedIn} />
           </div>

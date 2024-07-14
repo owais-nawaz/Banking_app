@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Footer from './Footer'
+import PlaidLink from './PlaidLink'
 
 const Sidebar = ({ user }: SiderbarProps) => {
   const pathname = usePathname();
@@ -14,12 +15,12 @@ const Sidebar = ({ user }: SiderbarProps) => {
     <section className="sidebar">
       <nav className="flex flex-col gap-4">
         <Link href="/" className="mb-12 cursor-pointer flex items-center gap-2">
-          <Image 
+          <Image
             src="/icons/logo1.png"
             width={34}
-            height={50}
+            height={40}
             alt="VaultGuard logo"
-             className="size-[28px] max-xl:size-14"
+            className="size-[28px] max-xl:size-16"
           />
           <h1 className="sidebar-logo">VaultGuard</h1>
         </Link>
@@ -32,7 +33,7 @@ const Sidebar = ({ user }: SiderbarProps) => {
               className={cn('sidebar-link', { 'bg-bank-gradient': isActive })}
             >
               <div className="relative size-6">
-                <Image 
+                <Image
                   src={item.imgURL}
                   alt={item.label}
                   fill
@@ -47,8 +48,8 @@ const Sidebar = ({ user }: SiderbarProps) => {
             </Link>
           )
         })}
-        
-        USER
+
+        <PlaidLink user={user} />
       </nav>
 
       <Footer user={user} />
